@@ -28,4 +28,5 @@ router.register(r'food_pics', views.FoodPictureViewSet)
 
 urlpatterns = [
     url('^', include(router.urls)),
+    url('^swipe', views.swipe_action, name='swipe')
 ]
